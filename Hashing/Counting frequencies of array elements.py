@@ -12,3 +12,11 @@ def frequencyCount(self, arr, N, P):
             arr[i] = d[i+1]
         else:
             arr[i] = 0
+
+            
+# another & best approach
+from collections import Counter
+def frequencyCount(self, arr, N, P):
+    d = Counter(arr)
+    for i in range(arr):
+        arr[i] = d[i+1]
